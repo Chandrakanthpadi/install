@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Install</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="installdp.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="hero">
+      <img src="installdp.png" alt="logo" class="logo" />
+      <div class="hero_text">
+        <div class="tag">
+          <h3>Install</h3>
+          <a href="https://www.instagram.com/___install___/"
+            ><img src="insta.svg" alt="" srcset=""
+          /></a>
+        </div>
+        <div class="hero_about">
+          Hey geeks! Here you can find all the links for the apps that we post
+          on our instagram page.
+        </div>
+      </div>
+    </div>
+    <input type="text" class="search" placeholder="Search app" />
+    <div class="grid">
+      <!-- <a href="#" class="card"></a> -->
+      <a
+        href="https://play.google.com/store/apps/details?id=com.bigheadtechies.diary&hl=en_IN&gl=US"
+        class="card"
+        >Daybook</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.cashbooknew&hl=en_IN&gl=US"
+        class="card"
+        >Cash Book</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=in.gov.umang.negd.g2c.international&hl=en_IN&gl=US"
+        class="card"
+        >UMANG India</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=mendeleev.redlime&hl=en_IN&gl=US"
+        class="card"
+        >Periodic Table 2021</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.digitalwellbeingexperiments.weflip&hl=en_IN&gl=US"
+        class="card"
+      >
+        We Flip</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.digitalwellbeingexperiments.activitybubbles&hl=en_IN&gl=US"
+        class="card"
+        >Activity Bubbles</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.nixgames.reaction&hl=en_IN&gl=US"
+        class="card"
+        >Reaction training</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=video.downloader.videodownloader&hl=en_IN&gl=US"
+        class="card"
+        >Video Downloader</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.knudge.me&hl=en_IN&gl=US"
+        class="card"
+        >Improve English</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.varbroz.perfectturn&hl=en_IN&gl=US"
+        class="card"
+        >Perfect turn!</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.kii.safe&hl=en_IN&gl=US"
+        class="card"
+      >
+        Keepsafe Photo Vault</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.deepstash&hl=en_IN&gl=US"
+        class="card"
+        >Deepstash</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.microsoft.amp.apps.bingnews&hl=en_IN&gl=US"
+        class="card"
+        >Microsoft News</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.paperboypvt.paperboy&hl=en_IN&gl=US"
+        class="card"
+        >Paperboy</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.bdj.vortexDroid&hl=en_IN&gl=US"
+        class="card"
+        >Rolly Vortex</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.ketchapp.stack&hl=en_IN&gl=US"
+        class="card"
+        >Stack</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.riseup.game&hl=en_IN&gl=US"
+        class="card"
+        >Rise up</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=photo.editor.photoeditor.photoeditorpro&hl=en_IN&gl=US"
+        class="card"
+        >Photo Editor Pro</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.pixlr.express&hl=en_IN&gl=US"
+        class="card"
+        >Pixlr</a
+      >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.canva.editor"
+        class="card"
+        >Canva</a
+      >
+    </div>
+  </body>
+  <script>
+    const search = document.querySelector(".search");
+    const links = document.querySelectorAll(".card");
+
+    search.addEventListener("keyup", (e) => {
+      const term = e.target.value.toLowerCase();
+      links.forEach((item) => {
+        if (item.innerHTML.toLowerCase().indexOf(term) == -1) {
+          item.style.display = "none";
+        } else {
+          item.style.display = "block";
+        }
+      });
+    });
+  </script>
+</html>
